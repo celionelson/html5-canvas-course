@@ -14,16 +14,15 @@
 			var c = document.querySelector("#c");
 			var ctx = c.getContext("2d");
 
-			ctx.beginPath();
-			ctx.moveTo(75, 75);
-			ctx.lineTo(125, 75);
-			ctx.lineTo(125, 125);
+			ctx.font = "36pt Impact";
+			ctx.textAlign = "center"
 
-			ctx.fillStyle = "blue"
-			ctx.fill();
-			
-			ctx.strokeStyle = "#33cc33"
-			ctx.strokeRect(50, 50, 100, 100)
+			ctx.fillStyle = "white"
+			ctx.strokeText("CANVAS MEMES !", c.width / 2, 40);
+
+			ctx.strokeStyle = "black";
+			ctx.lineWidth = 3;
+			ctx.strokeText("CANVAS MEMES !", c.width / 2, 40);
 
 		</script>
 
